@@ -1,0 +1,17 @@
+{
+    "name": "ahmed/product",
+    "authors": [
+        {
+            "name": "Ahmed M. Sadik",
+            "email": "ahmed.sadik.dev@gmail.com"
+        }
+    ],
+    "require": {
+      "ext-pdo": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\" : "app/"
+        }
+    }
+}
