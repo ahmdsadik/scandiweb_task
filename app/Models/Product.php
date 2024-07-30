@@ -168,7 +168,7 @@ class Product extends Model
          * @var Product $product_class
          */
 
-        $product_class = 'App\\Models\\' . ucfirst(strtolower($data['type']));
+        $product_class = 'App\\Models\\' . $data['type'];
 
         $product = new $product_class($data);
 
