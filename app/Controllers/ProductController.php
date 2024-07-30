@@ -37,15 +37,14 @@ class ProductController
             $validator = Validator::validate($roles, $data);
             if ($validator->failed()) {
                 flash('errors', $validator->errors());
-                redirect('/');
+                redirect(back());
             }
 
             Product::make($data);
+            redirect('/');
         } catch (\Throwable) {
             redirect(back());
         }
-
-        redirect('/');
     }
 
     public function destroy()
